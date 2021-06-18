@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Game</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+    <h1 style="font-family: sans-serif; font-weight: bold;">Tic Tac Toe</h1>
+
+    <h2 style="font-family: sans-serif; text-align: center;"><u>Score</u> <div style="font-family: sans-serif; text-align: center;">X: <span id="p1_score">0</div><div>O: <span id="p2_score">0</span></div></h2>
+    <h2 style="font-family: sans-serif; text-align: center;"> <span id="display_play_mode">Mode: Multiplayer</span>.</h2>
+    <h2 style="font-family: sans-serif; text-align: center;"> <span id="display_player">Your turn, X</span>.</h2>
+
+    <div class="game_board">
+      <div class='row'>
+        <div class="one" onclick="play('pone')"><span class="xo"><div id="choice1"></div></span></div>
+        <div class="two" onclick="play('ptwo')"><span class="xo"><div id="choice2"></div></span></div>
+        <div class="three" onclick="play('pthree')"><span class="xo"><div id="choice3"></div></span></div>
+      </div> 
+      <div class='row'>
+        <div class="four" onclick="play('pfour')"><span class="xo"><div id="choice4"></div></span></div>
+        <div class="five" onclick="play('pfive')"><span class="xo"><div id="choice5"></div></span></div>
+        <div class="six" onclick="play('psix')"><span class="xo"><div id="choice6"></div></span></div>
+      </div>
+      <div class='row'>
+        <div class="seven" onclick="play('pseven')"><span class="xo"><div id="choice7"></div></span></div>
+        <div class="eight" onclick="play('peight')"><span class="xo"><div id="choice8"></div></span></div>
+        <div class="nine" onclick="play('pnine')"><span class="xo"><div id="choice9"></div></span></div>
+      </div>
+    </div>
+
+    <button class="new_game" onclick="newGame()">New Game</button>
+    <button class="reset"onclick="reset()">Reset</button>
+    <button class="computer_or_multiplayer" onclick="computerMultiplayer()"><span id="play_mode_button">Play Against Computer</span></button>
+  </body>
+
+
+</html>
